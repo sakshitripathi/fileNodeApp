@@ -1,0 +1,27 @@
+< !DOCTYPE html >
+    <html>
+        <body>
+<h2>Upload</h2>
+ <form action="upload" method="post" enctype="multipart/form-data">
+ <input type="file" name="filetoupload"><br>
+ <input type="submit">
+ </form>
+<h2>Rename</h2>
+<form action="rename" method="post" enctype="multipart/form-data">
+ <label for="oldFile"><b>oldFile</b></label>
+        <input type="text" placeholder="Enter oldFile" name="oldFile" required>
+    
+        <label for="renamedFile"><b>renamedFile</b></label>
+        <input type="text" placeholder="Enter renamedFile" name="renamedFile" required>
+    
+        <button type="submit">Rename</button>
+ </form>
+<h2>Delete</h2>
+<form action="delete" method="post" enctype="multipart/form-data">
+ <label for="deleteFile"><b>deleteFile</b></label>
+        <input type="text" placeholder="Enter deleteFile" name="deleteFile" required>
+    
+        <button type="submit">delete</button>
+ </form>
+</body>
+</html>
